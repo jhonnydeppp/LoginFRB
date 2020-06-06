@@ -7,5 +7,27 @@
     <string name="inicia_sesi_n">Inicia Sesión</string>
     <string name="usuario">Usuario</string>
     <string name="todo">TODO</string>
+    <string name="name">name</string>
+    <string name="clave">clave</string>
+    <string name="user">user</string>
+    <string name="telefono">telefono</string>
+    <string name="direccion">direccion</string>
+    <string name="login_exitoso">Login Exitoso</string>
+    <string name="registrar">Registrar</string>
+    <string name="registro">Registro</string>
+    <string name="escriba_su_direcci_n">Escriba su dirección</string>
+    <string name="direcci_n">Dirección</string>
+    <string name="escriba_su_telefono">Escriba su telefono</string>
+    <string name="escriba_su_nombre">Escriba su nombre</string>
+    <string name="confirme_contrase_a">Confirme contraseña</string>
+    <string name="escriba_su_contrase_a">Escriba su contraseña</string>
+    <string name="escriba_tu_usuario">Escriba tu usuario</string>
+    <string name="nombre">Nombre</string>
+    <string name="confirmar_contrase_a">Confirmar contraseña</string>
+    <string name="nombre_q">Nombre:</string>
+    <string name="contrase_a_a">Contraseña:</string>
+    <string name="usuario_a">Usuario:</string>
+    <string name="telefono_a">Telefono:</string>
+    <string name="direcci_n_q">Dirección:</string>
 
 </resources>

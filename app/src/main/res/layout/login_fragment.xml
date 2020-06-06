@@ -7,7 +7,7 @@
     tools:context=".ui.login.LoginFragment">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/shape_basic"
@@ -30,14 +30,14 @@
         android:text="@string/inicia_sesi_n"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.56" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/et_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -47,13 +47,13 @@
         android:hint="@string/contrase_a"
         android:inputType="textPassword"
         android:padding="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_user"
+        app:layout_constraintStart_toStartOf="@+id/et_user"
+        app:layout_constraintTop_toBottomOf="@+id/et_user"
         android:autofillHints="" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_iniciar_sesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/shape_basic"
@@ -73,30 +73,30 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/olvidaste_tu_contrase_a"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_registrar"
+        app:layout_constraintStart_toStartOf="@+id/tv_registrar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_registrar" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/registrate"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/et_user"
+        app:layout_constraintEnd_toStartOf="@+id/et_user"
         app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/et_user"
         app:srcCompat="@mipmap/ic_user" />
 
     <ImageView
@@ -104,10 +104,10 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password"
+        app:layout_constraintEnd_toStartOf="@+id/et_password"
         app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toTopOf="@+id/et_password"
         app:srcCompat="@mipmap/ic_key" />
 </androidx.constraintlayout.widget.ConstraintLayout>

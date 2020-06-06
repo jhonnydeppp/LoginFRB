@@ -1,4 +1,4 @@
-package com.jhonnydev.loginfirebase.ui.profile
+package com.jhonnydev.loginfirebase.ui.register
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -8,24 +8,25 @@ import android.view.View
 import android.view.ViewGroup
 import com.jhonnydev.loginfirebase.R
 
-class ProfileFragment : Fragment() {
+class RegisterFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ProfileFragment()
+        fun newInstance() = RegisterFragment()
     }
 
-    private lateinit var viewModel: ProfileViewModel
+    private lateinit var viewModel: RegisterViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.profile_fragment, container, false)
+        return inflater.inflate(R.layout.register_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(ProfileViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(RegisterViewModel::class.java)
+        // TODO: Use the ViewModel
     }
 
 }
