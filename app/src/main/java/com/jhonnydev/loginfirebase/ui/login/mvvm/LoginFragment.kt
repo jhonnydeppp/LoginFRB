@@ -1,4 +1,4 @@
-package com.jhonnydev.loginfirebase.ui.login
+package com.jhonnydev.loginfirebase.ui.login.mvvm
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,8 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import com.jhonnydev.loginfirebase.R
-import com.jhonnydev.loginfirebase.ui.login.mvvm.LoginViewModel
-import com.jhonnydev.loginfirebase.ui.profile.ProfileFragment
+import com.jhonnydev.loginfirebase.ui.profile.mvvm.ProfileFragment
 import com.jhonnydev.loginfirebase.ui.register.RegisterFragment
 import com.jhonnydev.loginfirebase.utils.Utils
 import kotlinx.android.synthetic.main.login_fragment.*
@@ -21,10 +20,11 @@ class LoginFragment : Fragment() {
 
     private val TAG =  javaClass.simpleName
     companion object {
-        fun newInstance() = LoginFragment()
+        fun newInstance() =
+            LoginFragment()
     }
 
-    private lateinit var viewModel: LoginViewModel
+  //  private lateinit var viewModel: LoginViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,14 +39,14 @@ class LoginFragment : Fragment() {
         mLoginViewModel.user .observe(viewLifecycleOwner, Observer { users ->
             if(users.isNotEmpty()){
                 Log.i(TAG, "config: login succeful ${users.get(0).name}")
-                Utils.cambiarFragments(ProfileFragment.newInstance(),activity!!.supportFragmentManager, R.id.container)
+                Utils.cambiarFragments(ProfileFragment.newInstance(users.get(0)),activity!!.supportFragmentManager, R.id.container)
             }
         })
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
+      //  viewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

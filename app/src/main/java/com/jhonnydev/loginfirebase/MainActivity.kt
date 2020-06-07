@@ -2,9 +2,8 @@ package com.jhonnydev.loginfirebase
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 
-import com.jhonnydev.loginfirebase.ui.login.LoginFragment
+import com.jhonnydev.loginfirebase.ui.login.mvvm.LoginFragment
 import com.jhonnydev.loginfirebase.utils.Utils
 
 class MainActivity : AppCompatActivity() {
