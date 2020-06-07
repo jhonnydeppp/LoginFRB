@@ -62,4 +62,8 @@ dependencies {
 
     //fire cloud store
     implementation 'com.google.firebase:firebase-firestore:21.2.1'
+
+    //circle animation
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
 }

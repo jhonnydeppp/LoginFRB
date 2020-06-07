@@ -37,7 +37,7 @@ class RegisterFragment : Fragment() {
     private fun config(){
         viewModel.isUserRegistered .observe(viewLifecycleOwner, Observer { users ->
               if(users)
-                  Utils.makeToast(this.mContext,"Usuario Registrado con exito")
+                  Utils.makeToast(this.mContext,getString(R.string.registro_exitoso))
                 Utils.cambiarFragments(LoginFragment.newInstance(),activity!!.supportFragmentManager, R.id.container)
 
         })
