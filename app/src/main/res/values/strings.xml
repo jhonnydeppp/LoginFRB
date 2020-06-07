@@ -29,5 +29,7 @@
     <string name="usuario_a">Usuario:</string>
     <string name="telefono_a">Telefono:</string>
     <string name="direcci_n_q">Dirección:</string>
+    <string name="no_login">No se ha podido iniciar sesion revise su contraseña</string>
+    <string name="registro_exitoso">Usuario Registrado con exito</string>
 
 </resources>
